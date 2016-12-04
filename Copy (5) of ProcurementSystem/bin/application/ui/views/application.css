@@ -1,0 +1,23 @@
+.header {
+	-fx-font-size: 18pt;
+	-fx-font-weight: bold;
+}
+
+.main-content {
+	-fx-padding: 20px;
+	-fx-spacing: 20px;
+}
+
+.form-group {
+	-fx-spacing: 10px;
+	-fx-alignment: center-left;
+}
+
+.control-label {
+	-fx-font-weight: bold;
+	-fx-min-width: 130px;
+}
+
+.control-label-small {
+	-fx-font-weight: bold;
+}

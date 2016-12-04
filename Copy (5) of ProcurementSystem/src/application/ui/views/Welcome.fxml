@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<Scene xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ui.controllers.WelcomeController" width="800" height="600">
+	<BorderPane>
+		<center>
+			<VBox styleClass="main-content">
+				<children>
+					<Label styleClass="header" text="Create Purchase Order" />			
+					<Label fx:id="greeting" />
+				</children>
+			</VBox>
+		</center>
+	</BorderPane>
+</Scene>
+

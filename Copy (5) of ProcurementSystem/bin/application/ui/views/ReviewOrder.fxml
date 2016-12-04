@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Scene xmlns:fx="http://javafx.com/fxml/1">
+		<BorderPane>
+			<center>
+				<VBox styleClass="main-content">
+					<children>
+						<Label styleClass="header" text="Review Purchase Order" />
+						<HBox styleClass="form-group">
+							<children>
+								<Label styleClass="control-label-small" text="Item:" />
+								<Label text="Staples" />
+							</children>
+						</HBox>	
+						<HBox styleClass="form-group">
+							<children>
+								<Label styleClass="control-label-small" text="Quantity:" />
+								<Label text="200" />
+							</children>
+						</HBox>	
+						<HBox styleClass="form-group">
+							<children>
+								<Label styleClass="control-label-small" text="Requestor:" />
+								<Label text="Jane Doe" />
+							</children>
+						</HBox>
+						<HBox styleClass="form-group">
+							<children>
+								<Label styleClass="control-label-small" text="Date Submitted:" />
+								<Label text="10/08/2106" />
+							</children>
+						</HBox>
+						<HBox styleClass="form-group">
+							<children>
+								<Label styleClass="control-label-small" text="Justification:" />
+								<Label text="We are running low on staples in the supply closet." />
+							</children>
+						</HBox>
+						<HBox styleClass="form-group">
+							<children>
+								<Button text="Approve" />
+								<Button text="Reject" />
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+			</center>
+		</BorderPane>
+</Scene>
+

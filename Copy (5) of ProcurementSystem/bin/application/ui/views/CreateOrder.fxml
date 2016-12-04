@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<Scene xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ui.controllers.CreateOrderController" width="800" height="600">
+	<BorderPane>
+		<center>
+			<VBox styleClass="main-content">
+				<children>
+					<Label fx:id="titleLabel" styleClass="header" text="Create Purchase Order" />
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Item Category:" />
+							<ChoiceBox fx:id="categoryChoiceBox" onAction="#categorySelected"></ChoiceBox>
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Item:" />
+							<ChoiceBox fx:id="itemChoiceBox"></ChoiceBox>
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Description:" />
+							<TextArea fx:id="descriptionTextArea" prefWidth="400" prefHeight="100" />
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Quantity:" />
+							<TextField fx:id="quantityTextBox" prefWidth="40" />
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Facility:" />
+							<ChoiceBox fx:id="facilityChoiceBox"></ChoiceBox>
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Office/Room Number:" />
+							<TextField fx:id="roomTextBox" prefWidth="80" />
+						</children>
+					</HBox>
+					<HBox styleClass="form-group">
+						<children>
+							<Label styleClass="control-label" text="Justification:" />
+							<TextArea fx:id="justificationTextArea" prefWidth="400" prefHeight="100" />
+						</children>
+					</HBox>
+					<HBox fx:id="buttonBox" styleClass="form-group">
+						<children>
+							<Button onAction="#saveInWorkOrder" text="Save" />
+							<Button onAction="#submitOrder" text="Save and Submit" />
+							<Button fx:id="cancelButton" onAction="#cancelOrder" text="Cancel Order" />
+							<Button onAction="#goToListScreen" text="Back to Order List" />
+						</children>
+					</HBox>
+				</children>
+			</VBox>
+		</center>
+	</BorderPane>
+</Scene>
+
